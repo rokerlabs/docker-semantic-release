@@ -5,16 +5,16 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     ["@semantic-release/exec", {
-      "prepareCmd": "echo 'test exec'",
+      "prepareCmd": "echo 'test exec'"
     }],
     ["@semantic-release/git", {
-      "assets": ["README.md""],
+      "assets": ["README.md"],
       "message": "test: git"
     }],
     ["@semantic-release/github", {
       "assets": [
         {"path": "Dockerfile", "label": "Dockerfile"}
       ]
-    }],
+    }]
   ]
 }
