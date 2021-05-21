@@ -1,5 +1,4 @@
 {
-  "branches": ["[a-zA-Z0-9]+.*"],
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
