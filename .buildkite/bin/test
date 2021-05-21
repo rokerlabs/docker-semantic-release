@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -eo pipefail
+
+echo "--- :inspec: Install InSpec"
+curl -sSL https://omnitruck.chef.io/install.sh | bash -s -- -P inspec
+
+echo "+++ :inspec: Test image"
+inspec exec inspec --no-distinct-exit --no-create-lockfile --chef-license=accept-silent

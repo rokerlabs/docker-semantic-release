@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -euo pipefail
+
+imageRepo="$BUILDKITE_ORGANIZATION_SLUG/$BUILDKITE_PIPELINE_SLUG"
+imageTag="rc"
+releaseTag=$(jq -r '.dependencies["semantic-release"]' package.json)
+
+if [ "$BUILDKITE" == "true" ]; then
+    docker pull $imageRepo:$imageTag
+    echo "+++ :docker: Tag $imageRepo:$imageTag => $imageRepo:$releaseTag"
+    docker tag $imageRepo:$imageTag $imageRepo:$releaseTag
+    docker push $imageRepo:$releaseTag
+else
+    echo "ERROR   Docker image cannot be released outside of the Buildkite pipeline!"
+    exit 1
+fi

@@ -1,0 +1,8 @@
+{
+  "assignees": [
+    "samjmarshall"
+  ],
+  "extends": [
+    "github>rokerlabs/renovate-config"
+  ]
+}

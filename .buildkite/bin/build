@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -euo pipefail
+
+image="$BUILDKITE_ORGANIZATION_SLUG/$BUILDKITE_PIPELINE_SLUG:rc"
+echo "+++ :docker: Build $image"
+docker build . -t $image
+
+if [ "$BUILDKITE" == "true" ]; then
+  echo "--- :docker: Push $image"
+  docker push $image
+fi
