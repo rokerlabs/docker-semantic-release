@@ -32,7 +32,7 @@ machine:
 Simply run the following make command to configure you local dev environment:
 
 ```shell
-make setup
+make install
 ```
 
 ## <a name="tests"> Building and Testing
