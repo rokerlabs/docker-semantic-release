@@ -1,6 +1,6 @@
 # docker-semantic-release
 
-[![Build status](https://badge.buildkite.com/86e20f73ca3d5c318e626f7aadc69dc4725154755ee104ce96.svg)](https://buildkite.com/rokerlabs/semantic-release)
+[![Build status](https://badge.buildkite.com/86e20f73ca3d5c318e626f7aadc69dc4725154755ee104ce96.svg?branch=master)](https://buildkite.com/rokerlabs/semantic-release)
 
 Docker image for <a href="https://github.com/semantic-release/semantic-release"><code>semantic-release</code></a>.
 
