@@ -8,7 +8,7 @@ Docker image for <a href="https://github.com/semantic-release/semantic-release">
 ---
 
 | Name | Description |
-| ---- | ----------- |
+| :--- | :---------- |
 | changelog | [Create or update a changelog file](https://github.com/semantic-release/changelog) |
 | exec | [Execute custom shell commands](https://github.com/semantic-release/exec) |
 | git | [Commit release assets to the project's git repository](https://github.com/semantic-release/git) |
