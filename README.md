@@ -4,9 +4,17 @@
 
 Docker image for <a href="https://github.com/semantic-release/semantic-release"><code>semantic-release</code></a>.
 
+## Available plugins
 ---
 
+| Name | Description |
+| ---- | ----------- |
+| changelog | [Create or update a changelog file](https://github.com/semantic-release/changelog) |
+| exec | [Execute custom shell commands](https://github.com/semantic-release/exec) |
+| git | [Commit release assets to the project's git repository](https://github.com/semantic-release/git) |
+
 ## Usage in CI
+---
 
 Example usage is various CI platforms.
 
