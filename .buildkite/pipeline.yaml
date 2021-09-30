@@ -7,7 +7,7 @@ steps:
   - label: ":inspec: InSpec"
     command: .buildkite/bin/test
     plugins:
-      - docker#v3.8.0:
+      - docker#v3.9.0:
           image: $BUILDKITE_ORGANIZATION_SLUG/$BUILDKITE_PIPELINE_SLUG:rc
           propagate-environment: true
 
@@ -16,7 +16,7 @@ steps:
       - "echo '+++ :git: semantic-release'"
       - semantic-release --dry-run
     plugins:
-      - docker#v3.8.0:
+      - docker#v3.9.0:
           image: $BUILDKITE_ORGANIZATION_SLUG/$BUILDKITE_PIPELINE_SLUG:rc
           mount-ssh-agent: true
           propagate-environment: true
